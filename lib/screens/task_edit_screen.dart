@@ -37,13 +37,13 @@ class _TaskEditScreenState extends State<TaskEditScreen> {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            icon: Icon(Icons.close),
+            icon: const Icon(Icons.close),
           ),
           IconButton(
             onPressed: () {
               _onSaveForm(context);
             },
-            icon: Icon(Icons.save),
+            icon: const Icon(Icons.save),
           ),
         ],
       ),

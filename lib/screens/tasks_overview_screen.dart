@@ -26,13 +26,13 @@ class _TasksOverviewScreenState extends State<TasksOverviewScreen> {
           IconButton(onPressed: () {
              //during create task passing  negative taskId
               Navigator.of(context).pushNamed(TaskEditScreen.routName,  arguments: -1);
-          }, icon: Icon(Icons.add),)
+          }, icon: const Icon(Icons.add),)
         ],
       ),
       body:    Column(children: [
         Container(
-          padding: EdgeInsets.all(10) ,
-          color: Color.fromRGBO(233, 239, 239, 1.0),
+          padding: const EdgeInsets.all(10) ,
+          color: const Color.fromRGBO(233, 239, 239, 1.0),
           child: Row(
             children: [
               Container(
