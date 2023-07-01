@@ -16,7 +16,7 @@ class Tasks with ChangeNotifier {
   }
 
   Task getItemById(int id) {
-    //cloning task making
+    //making state immutable cloning tasks   and  return clone  ,for edit form
     return _items.firstWhere((Task current) {
       return current.id == id;
     }).copy();
